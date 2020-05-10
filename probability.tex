@@ -1,0 +1,325 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\newcommand{\hdir}{.}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{euscript}
+\usepackage{upgreek}
+\usepackage{array}
+\usepackage{theorem}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{geometry}
+\usepackage{tikz,fullpage}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{autonum}
+\usepackage{amsthm}
+\usepackage{verbatim} 
+
+\newcommand{\bmatr}{{\mathbf{B}}}
+\newcommand{\cmatr}{{\mathbf{C}}}
+\newcommand{\hmatr}{{\mathbf{H}}}
+\newcommand{\fmatr}{{\mathbf{F}}}
+\newcommand{\mmatr}{{\mathbf{M}}}
+\newcommand{\xmatr}{{\mathbf{X}}}
+\newcommand{\pmatr}{{\mathbf{P}}}
+\newcommand{\xmatrt}{{\tilde{\mathbf{X}}}}
+\newcommand{\imatr}{{\mathbf{I}}}
+\newcommand{\vmatr}{{\mathbf{V}}}
+\newcommand{\wmatr}{{\mathbf{W}}}
+\newcommand{\umatr}{{\mathbf{U}}}
+\newcommand{\zmatr}{{\mathbf{Z}}}
+\newcommand{\zmatrt}{{\tilde{\mathbf{Z}}}}
+\newcommand{\Tmatr}{\mathbf{T}}
+\newcommand{\lambdamatr}{{\mathbf{\Lambda}}}
+\newcommand{\phimatr}{\mathbf{\Phi}}
+\newcommand{\sigmamatr}{\mathbf{\Sigma}}
+\newcommand{\thetamatr}{\boldsymbol{\Theta}}
+
+\newcommand{\ab}{{\mathbf{a}}}
+\newcommand{\bb}{{\mathbf{b}}}
+\newcommand{\cb}{{\mathbf{c}}}
+\newcommand{\db}{{\mathbf{d}}}
+\newcommand{\eb}{{\mathbf{e}}}
+\newcommand{\fb}{{\mathbf{f}}}
+\newcommand{\gb}{{\mathbf{g}}}
+\newcommand{\hb}{{\mathbf{h}}}
+\newcommand{\mb}{{\mathbf{m}}}
+\newcommand{\pb}{{\mathbf{p}}}
+\newcommand{\qb}{{\mathbf{q}}}
+\newcommand{\rb}{{\mathbf{r}}}
+\newcommand{\tb}{{\mathbf{t}}}
+\newcommand{\ub}{{\mathbf{u}}}
+\newcommand{\vb}{{\mathbf{v}}}
+\newcommand{\wb}{{\mathbf{W}}}
+\newcommand{\xb}{{\mathbf{x}}}
+\newcommand{\xt}{{\tilde{x}}}
+\newcommand{\xbt}{\tilde{{\mathbf{x}}}}
+\newcommand{\yb}{{\mathbf{y}}}
+\newcommand{\zb}{{\mathbf{z}}}
+\newcommand{\zt}{{\tilde{z}}}
+\newcommand{\zbt}{{\tilde{\mathbf{z}}}}
+\newcommand{\mub}{{\boldsymbol{\mu}}}
+\newcommand{\alphab}{{\boldsymbol{\alpha}}}
+\newcommand{\thetab}{{\boldsymbol{\theta}}}
+\newcommand{\iotab}{\boldsymbol{\iota}}
+\newcommand{\zetab}{\boldsymbol{\zeta}}
+\newcommand{\xib}{\boldsymbol{\xi}}
+\newcommand{\xibt}{\tilde{\boldsymbol{\xi}}}
+\newcommand{\xit}{\tilde{\xi}}
+\newcommand{\betab}{{\boldsymbol{\beta}}}
+\newcommand{\phib}{{\boldsymbol{\phi}}}
+\newcommand{\psib}{{\boldsymbol{\psi}}}
+\newcommand{\gammab}{{\boldsymbol{\gamma}}}
+\newcommand{\lambdab}{{\boldsymbol{\lambda}}}
+\newcommand{\varepsilonb}{{\boldsymbol{\varepsilon}}}
+\newcommand{\pib}{{\boldsymbol{\pi}}}
+\newcommand{\sigmab}{{\boldsymbol{\sigma}}}
+
+
+\newcommand{\scl}{s_{\mathsf{c}}}
+\newcommand{\shi}{s_{\mathsf{h}}}
+\newcommand{\shib}{\mathbf{s}_{\mathsf{h}}}
+\newcommand{\MOD}{M}
+\newcommand{\entr}{\mathsf{H}}
+\newcommand{\REG}{\Omega}
+\newcommand{\Mquol}{V}
+\newcommand{\prob}{p}
+\newcommand{\expec}{\mathsf{E}}
+
+\newcommand{\xo}{{\overline{x}}}
+\newcommand{\Xo}{{\overline{x}}}
+\newcommand{\yo}{{\overline{y}}}
+
+\newcommand{\xbo}{{\overline{\mathbf{x}}}}
+\newcommand{\Xbo}{{\overline{\mathbf{X}}}}
+
+\newcommand{\Amc}{{\mathcal{A}}}
+\newcommand{\Bmc}{{\mathcal{B}}}
+\newcommand{\Cmc}{{\mathcal{C}}}
+\newcommand{\Jmc}{{\mathcal{J}}}
+\newcommand{\Imc}{{\mathcal{I}}}
+\newcommand{\Kmc}{{\mathcal{K}}}
+\newcommand{\Lmc}{{\mathcal{L}}}
+\newcommand{\Mmc}{{\mathcal{M}}}
+\newcommand{\Nmc}{{\mathcal{N}}}
+\newcommand{\Pmc}{{\mathcal{P}}}
+\newcommand{\Tmc}{{\mathcal{T}}}
+\newcommand{\Vmc}{{\mathcal{V}}}
+\newcommand{\Wmc}{{\mathcal{W}}}
+
+
+\newcommand{\T}{^{\text{\tiny\sffamily\upshape\mdseries T}}}
+\newcommand{\deist}{\mathbb{R}}
+\newcommand{\ebb}{\mathbb{E}}
+
+\newcommand{\Amatr}{\mathbf{A}}
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\Z}{\mathbf{Z}}
+\newcommand{\Umatr}{\mathbf{U}}
+\newcommand{\zetavec}{\boldsymbol{\zeta}}
+
+\newcommand{\M}{\mathbf{M}}
+\newcommand{\x}{{\mathbf{x}}}
+\newcommand{\z}{{\mathbf{z}}}
+\newcommand{\ical}{{\mathcal{I}}}
+\newcommand{\tvec}{{\mathbf{t}}}
+\newcommand{\xvec}{{\mathbf{x}}}
+\newcommand{\zvec}{{\mathbf{z}}}
+\newcommand{\bvec}{{\mathbf{b}}}
+\newcommand{\qvec}{{\mathbf{z}}}
+\newcommand{\pvec}{{\mathbf{p}}}
+\newcommand{\wvec}{{\mathbf{W}}}
+\newcommand{\rvec}{{\mathbf{r}}}
+\newcommand{\thetavec}{{\mathbf{\theta}}}
+\newcommand{\y}{{\mathbf{y}}}
+\newcommand{\g}{{\mathbf{g}}}
+\newcommand{\w}{{\mathbf{W}}}
+\newcommand{\wm}{{\mathbf{w}}}
+\newcommand{\m}{{\mathbf{m}}}
+
+\renewcommand{\baselinestretch}{1.3} 
+
+\theoremstyle{definition}
+\DeclareMathOperator*{\argmin}{arg\,min}
+%\graphicspath{ {fig/} }
+
+\newtheorem*{theorem*}{Теорема}
+\newtheorem{theorem}{Теорема}
+
+\newtheorem*{definition*}{Определение}
+\newtheorem{definition}{Определение}
+
+
+\begin{document}
+\selectlanguage{russian}
+
+
+\section{Сходимость по вероятности}
+\begin{definition*}
+Пусть $(\Omega,\mathcal{F},\mathbb{P})$ ~--- вероятностное пространство с определёнными на нём случайными величинами $\X,\X_n,(n=1,2,\dots)$. Говорят, что $\{\X_n\}_{n=1}^\infty$ \textbf{сходится по вероятности к} $\X$, если $\forall\varepsilon>0$:
+\begin{equation}\label{eq1}
+\lim_{n \to \infty}\mathbb{P}(|\X_n-\X|>\varepsilon)=0
+\end{equation}
+\textbf{Обозначение:} $\X_n\xrightarrow{\mathbb{P}}\X$ 
+\end{definition*}
+
+Данное свойство означает, что если взять величину $\X_n$ с достаточно большим номером, то вероятность значительного отклонения от предельной величины $\X$ будет небольшой. Однако важно понимать, что если одновременно (т.е. для одного и того же элементарного исхода $\omega$) рассмотреть последовательность $\{X_n(\omega)\}$, то она не обязана сходиться к значению $X(\omega)$, вообще говоря, ни при каком $\omega$. Т.е. сколь угодно далеко могут находиться сильно отклоняющиеся значения, просто их "не очень много", поэтому вероятность того, что такое сильное отклонение попадет в заданном эксперименте на конкретно заданный номер n, мала.
+
+В качестве примера рассмотрим вероятностное пространство $\Omega = [0,1]$, вероятность - мера Лебега (т.е. вероятность любого интервала равна его длине). Случайные величины зададим следующим образом: для первых двух $X_1, X_2$ разбиваем $\Omega$ на два интервала $[0,\frac{1}{2})$ и $(\frac{1}{2},1]$ и определяем $X_1$ равной 1 на первом интервале и 0 на втором, а $X_2$ - наоборот, 0 на первом интервале и 1 на втором. Далее берем следующие четыре величины $X_3,X_4,X_5,X_6$, делим $\Omega$ на четыре непересекающихся интервала длины $\frac14$ и задаем каждую величину равной 1 на своем интервале и 0 на остальных. Затем рассматриваем следующие 8 величин, делим $\Omega$ на 8 интервалов и т.д.
+
+В результате для каждого элементарного исхода $\omega$ последовательность значений имеет вид:
+\begin{equation}\label{eq2}
+\{X_n(\omega)\}=(\underbrace{1,0}_2,\underbrace{0,0,1,0}_4,\underbrace{0,0,0,0,0,1,0,0}_8,\ldots)
+\end{equation}
+последовательность состоит из серий длин $2,4,8,16,\dots,2^k,\dots$, причем в каждой серии на каком-либо одном месте (зависящем от выбранного элементарного исхода) стоит значение 1, а на остальных местах - нули. 
+
+Случайные величины, входящие в серию с номером $k$ (длины $2^k$) принимают значение 1 с вероятностью $2^{-k}$ и значение 0 с вероятностью $1-2^{-k}$. Из основного определения следует, что данная последовательность сходится по вероятности к случайной величине $X\equiv 0$. При этом ни при одном значении $\omega$ последовательность значений $X_n$ не сходится к 0, так как в любой последовательности значений сколь угодно далеко обязательно находятся отстоящие от 0 значения. Однако поскольку длины серий неограниченно возрастают, то вероятность "попасть" на это значение становится сколь угодно малой при выборе элемента последовательности с достаточно большим номером.
+
+Заметим, что вместо значения 1 можно выбрать любое другое (в том числе как угодно быстро возрастающее с ростом n), и тем самым сделать последовательность математических ожиданий $\mathbb{M}X_n$ произвольной (в том числе неограниченной). Данный пример показывает, что сходимость по вероятности не влечет сходимости математических ожиданий (равно как и любых других моментов).
+
+Более сильный вид сходимости, который обеспечивает сходимость последовательностей значений к предельному - сходимость почти всюду.
+
+\begin{comment}
+\section{Выбор моделей}
+
+Задача выбора модели является одной из самых актуальных в регрессионном анализе. 
+В современной зарубежной литературе для ее решения используется принцип минимальной длины описания. Он предлагает использовать для описания данных наиболее простую
+и одновременно наиболее точную модель ь [115, 120, 116, 117, 165].
+
+Как альтернатива
+информационным критериям [56, 57, 14, 15, 84, 274] был предложен метод двухуровневого
+байесовского вывода. На первом уровне вывода настраиваются параметры моделей. На втором уровне настраиваются их гиперпараметры. Согласно этому методу, вероятность выбора
+более сложной модели ниже вероятности выбора простой модели при сравнимом значении
+функции ошибки на регрессионных остатках. Принципы байесовского подхода для выбора
+линейных моделей регрессии и классификации предложены авторами [62, 26, 30, 31].
+
+Одновременно с оценкой параметров вычисляются и гиперпараметры (параметры распределения параметров) модели. 
+\end{comment}
+
+
+\section{Теорема о сходимости при большой выборке}
+
+Если две линейные модели имеют разные наборы признаков и одну и ту же зависимую переменную, то остаточная дисперсия корректной модели ($s_n^2$) имеет меньшее среднее значение, чем некорректной ($t_n^2$). Этот раздел показывает, что в довольно общих условиях $s_n^2 <t_n^2$ будет выполняться с вероятностью, близкой к 1, при условии, что размер выборки n достаточно велик. Когда размер выборки невелик,  то эксперт, который принимает правило принятия решения о выборе модели с меньшей остаточной дисперсией, может принимать неправильные решения со значительной вероятностью. В настоящем разделе показано, что вероятность принятия «неправильной» модели на основе упомянутого выше правила принятия решений сходится к нулю при увеличении размера выборки. Этот результат кажется очевидным, но доказательство не совсем тривиально.
+
+Мы рассматриваем линейную модель с n наблюдениями и k признаками, которая описывается уравнением 
+\begin{equation}\label{eq3}
+y_n = \X_n\beta+\varepsilon_n
+\end{equation}
+Предполагается, что ошибка одинаково независимо распределена с нулевым средним и дисперсией $\sigma^2$: а так же что матрица $\X_n$ размера $n\times k$ является нестохастической. Стохастическая матрица в теории вероятностей — это неотрицательная матрица, в которой сумма элементов любой строки или любого столбца равна единице. Пусть матрица $B_n$ размера $k\times n$ будет любой матрицей, такой что $\X_n B_n \X_n = \X_n$ и пусть $\X_n B_n$ будет симметричной. Тогда $\X_n B_n$ является идемпотентной, и ее след равен ее рангу. Определим остаточную дисперсию как 
+\begin{equation}\label{eq4}
+s_n^2 = y_n^{T}(I_n - \X_n B_n)y_n/q
+\end{equation}
+где $q = n - rank(\X_n)$.
+
+Предположим, что $y_n = \X_n\beta+\varepsilon_n$ является правильно указанной моделью и что альтернативный набор регрессоров представлен нестохастической матрицей $Z_n$ размера $n\times h$ которая удовлетворяет условию того, что пространство, охватываемое его столбцами, не содержит $X_n\beta$. В противном случае, сушествует вектор $\gamma$, такой что $Z_n\gamma = \X_n\beta$ так что обе спецификации будут правильно описывать $E(y_n)$. Следовательно, спецификация, которая содержит все переменные правильной спецификации, а также некоторые дополнительные нерелевантные переменные, не является неправильной в нашем понимании, хотя и может привести к неэффективной оценке для $\beta$. Под спецификацией модели в данном случае будем понимать выбор независимых переменных. Пусть $C_n$ размера $h\times n$ будет матрицей такой, что $Z_n C_n Z_n = Z_n$ и $Z_n C_n$ является симметричной. Тогда остаточная дисперсия «неправильной» модели определяется как
+\begin{equation}\label{eq5}
+t_n^2 = y_n^{T}(I_n - Z_n C_n)y_n/m
+\end{equation}
+где $m = n -rank(Z_n)$. Подставляя $y_n = \X_n\beta+\varepsilon_n$ мы получаем 
+\begin{equation}\label{eq6}
+t_n^2 = \beta^{T}\X_n^{T}H_n\X_n\beta/m +2\beta^{T}\X_n^{T}H_n \varepsilon_n/m +\varepsilon_n^{T}H_n\varepsilon_n/m
+\end{equation}
+где $H_n$ 
+\begin{equation}\label{eq7}
+H_n = I_n - Z_n C_n
+\end{equation}
+которая удовлетворяет $H_n^{T} = H_n$ , $H_n^2 = H_n$, $H_n Z_n = 0$. Первый правый член в \eqref{eq6} можно интерпретировать как остаточную дисперсию регрессии $\X_n \beta$ на $Z$. Предположим положительную нижнюю оценку исходя из нашей теоремы:
+\begin{equation}\label{eq8}
+\theta_n^2 \equiv \beta^{T} \X_n^{T} H_n \X_n \beta/m \geq g^2
+\end{equation}
+для определенного числа $g>0$ и от определенного значения n и далее. Таким образом, мы исключаем возможность того, что $\theta_n^2$ будет сходиться к нулю, что будет означать, что ошибка спецификации исчезнет в долгосрочной перспективе. Очевидно, последовательность $\{\theta_n^2\}_{n=1}^{\infty}$ может сходиться к определенному пределу $\theta_n^2$ или расходиться. В первом случае наш основной результат может быть доказан очень простым способом, см. \eqref{eq11}. Во втором случае последовательность может либо колебаться, либо стремиться к бесконечности. 
+
+Для дальнейшего повествовния напомним, что в условиях, указанных выше
+\begin{equation}\label{eq9}
+\underset{n \to \infty}{plim}\;s_n^2 = \sigma^2
+\end{equation}
+что было показано в \cite{bib_1} для случая $\textit{rank}(X_n) = k$ и в \cite{bib_2} для более общего ранга $\textit{rank}(X_n) \leq k$. Так же можно показать, что
+\begin{equation}\label{eq10}
+\underset{n \to \infty}{plim}\;\varepsilon_n^{T} H_n \varepsilon_n/m = \sigma^2
+\end{equation}
+
+Теперь мы можем сформулировать и доказать следующий простой результат. 
+Если $\lim\limits_{n \to \infty} \theta_n^2 = \theta_n^2 \geq g^2 $ тогда 
+\begin{equation}\label{eq11}
+\underset{n \to \infty}{plim}\;t_n^2 = \sigma^2+\theta^2
+\end{equation}
+
+Первый правый член в уравнении \eqref{eq6} сходится к $\theta^2$ по предположению, второй член имеет второй момент равный $4\theta_n^{2}\sigma^2/m$ так что оно сходится к нулю в среднем квадратичном, а для третьего члена мы имеем \eqref{eq10}.
+
+Если последовательность $\{\theta_n^2\}_{n=1}^{\infty}$ расходится, то второй член в \eqref{eq6} может стать существенно отрицательным. Это не всегда верно, что этот второй член сходится к нулю,
+когда Z и $\varepsilon$ независимы. Последовательность $\{\theta_n^2\}_{n=1}^{\infty}$ может стремится к бесконечности. Тогда второе слагаемое, которое имеет нулевое среднее значение и дисперсию $4\theta_n^{2}\sigma^2/m$, может существенно отличаться от нуля в обоих направлениях. Таким образом, мы должны доказать, что это может быть достаточно компенсировано первым членом. Наш основной результат достаточно общий, чтобы включить как случаи сходимости, так и расхождения. 
+
+\begin{theorem*}
+При предположении \eqref{eq8} $\lim\limits_{n \to \infty} P[t_n^2< s_n^2 + \lambda g^2] =0 $ для каждой $\lambda$ удовлетворяющей $\lambda < 1$.
+\end{theorem*}
+
+\begin{proof}
+Мы ограничимся случаем $0<\lambda<1$ во избежание технических осложнений. Имея доказательство для этого случая, обобщение для случая $\lambda \leq 0$ очевидно, поскольку функции распределения монотонно не убывают. Доказательство основано на следующей элементарной теореме в теории вероятностей. Пусть $U_1,U_2, \dots, U_k$ есть произвольные вещественные случайные величины; тогда 
+\begin{equation}\label{eq12}
+P[\sum\limits_{i=1}^k U_i<0] \leq P [ U_i<0 \: \textit{хотя бы для одного i}] \leq \sum\limits_{i=1}^k P[U_i < 0]
+\end{equation}
+Неравенство в теореме можно записать в виде 
+\begin{equation}\label{eq13}
+t_n^2 - \lambda g^2 - s_n^2 = \sum\limits_{i=1}^4 U_{in} <0
+\end{equation}
+где
+\begin{equation}\label{eq14}
+\begin{flushleft}
+U_{1n} = (\theta_n +\phi_1 g)(\theta_n - \phi_2 g) - 2 \eta \quad (\theta_n>0) \\
+U_{2n} = \xi_n + (\phi_2 - \phi_1)g \theta_n\\
+U_{3n} = \varepsilon_n^{T} H_n \varepsilon_n / m - \sigma^2 + \eta\\
+U_{4n} = -s_n^2 + \sigma^2  + \eta \\
+\xi_n = 2\beta^{T}\X_n^{T}H_n \varepsilon_n/m .
+\end{flushleft}
+\end{equation}
+Были использованы \eqref{eq6} и \eqref{eq8}. Числа $\eta, \phi_1, \phi_2$ могут быть выбраны по желанию при условии $0<\phi_1 \phi_2 = \eta <1$, но в контексте нашего доказательства мы ограничим их 
+\begin{equation}\label{eq15}
+0<\phi_1< \phi_2 <1 , \quad 0<\eta < \frac{1}{2} g^2 (1+\phi_1)(1-\phi_2)
+\end{equation}
+Существование $\eta, \phi_1, \phi_2$ с заданными свойствами может быть просто доказано следующим образом. Выберите любой $\phi_2$ такой что $0<\lambda^{1/2} <\phi_2 <1 $. Тогда $0<\phi_1 = \lambda / \phi_2 < \lambda^{1/2}<\phi_2$. 
+
+Итак, теперь, согласно \eqref{eq12}, чтобы доказать теорему, достаточно доказать, что 
+\begin{equation}\label{eq16}
+\lim\limits_{n \to \infty} P[U_{in} < 0] =0 ,\quad (i=1,\dots,4)
+\end{equation}
+Мы докажем эти четыре утверждения в обратном порядке. Во-первых, для i=4 и i=3, \eqref{eq16} сразу же следует из \eqref{eq9} и \eqref{eq10} соответственно. Во-вторых, для i=2:
+\begin{equation}\label{eq17}
+P[U_{2n}<0] = P[\xi_n < -(\phi_2 - \phi_1)g\theta_n] \leq P[|\xi_n| \geq (\phi_2 - \phi_1)g \theta_n] \\
+ \leq \frac{E(\xi_n^2)}{(\phi_2 - \phi_1)^2 g^2 \theta_n^2} = \frac{4\sigma^2}{(\phi_2 - \phi_1)^2 g^2 m} 
+\end{equation}
+
+при помощи неравенства Чебышева. В-третьих, так как $U_{1n}$ являются фиксированными числами, \eqref{eq16} сводится к $U_{in} > 0$ для $i = 1$. Итак, для доаказательства того, что $U_{1n} \geq$ мы начнем с его определения и используем неравенства $\theta_n > g > 0 , 0<\phi_1 <\phi_2<1$; см. \eqref{eq8} и \eqref{eq15}. Тогда мы получаем:
+
+\begin{equation}\label{eq18}
+\begin{flushleft}
+    \theta_n +\phi_1 g > g(1+\phi_1)>0,\\
+    \theta_n - \phi_2 g > g(1-\phi_2) >0
+\end{flushleft}
+\end{equation}
+
+Объединив эти результаты с \eqref{eq15} мы получим 
+\begin{equation}\label{eq19}
+(\theta_n + \phi_1 g)(\theta_n - \phi_2 g) > g^2(1+\phi_1)(1-\phi_2) > 2\eta
+\end{equation}
+что подразумевает желаемый результат и заканчивает доказательство теоремы.
+\end{proof}
+
+\begin{thebibliography}{4}
+\bibitem{bib_1} Kloek T. Note on consistent estimation of the variance of the disturbances in the linear model. – 1970. – №. 2099-2018-3046.
+
+\bibitem{bib_2} Drygas H. A note on a paper by T. Kloek concerning the consistency of variance estimation in the linear model //Econometrica (pre-1986). – 1975. – Т. 43. – №. 1. – С. 175.
+\end{thebibliography}
+\end{document}
+
